@@ -14,7 +14,7 @@ class Client{
         Scanner sc=new Scanner(System.in);
 
         //create the socket on port 5000
-        Socket s=new Socket("137.158.58.126",5000);
+        Socket s=new Socket("137.158.58.124",5000);
         DataInputStream din=new DataInputStream(s.getInputStream());
         DataOutputStream dout=new DataOutputStream(s.getOutputStream());
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -54,6 +54,10 @@ class Client{
         {
             //do nothing
         }
+    }
+
+    public static void upload(String filename){
+
     }
 }
 //this is a typical client program
